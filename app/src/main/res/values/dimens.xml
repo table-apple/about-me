@@ -4,4 +4,7 @@
     <dimen name="text_view_padding_small">8dp</dimen>
     <dimen name="image_view_padding_small">8dp</dimen>
     <dimen name="image_view_margin_small">16dp</dimen>
+    <dimen name="scroll_text_std_height">50dp</dimen>
+    <dimen name="scroll_text_height">50dp</dimen>
+    <item name="neat_line_space" type="dimen" format="float">1.0</item>
 </resources>

@@ -16,11 +16,13 @@
         style="@style/name_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/text_view_margin_small"
+        android:layout_marginVertical="@dimen/text_view_margin_small"
         android:text="@string/name_text"
         android:textAlignment="center" />
 
     <ImageView
-        android:id="@+id/avatar_image"
+        android:id="@+id/star_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/image_view_margin_small"
@@ -28,5 +30,63 @@
         android:contentDescription="@string/avatar_image_description"
         android:paddingHorizontal="@dimen/image_view_padding_small"
         android:paddingVertical="@dimen/image_view_padding_small"
-        tools:srcCompat="@tools:sample/avatars[7]" />
+        app:srcCompat="@android:drawable/star_big_on" />
+
+    <EditText
+        android:id="@+id/nickname_field"
+        style="@style/name_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/roboto_mono"
+        android:hint="@string/nickname_hint"
+        android:inputType="textPersonName|textCapWords" />
+
+    <Button
+        android:id="@+id/done_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/done_button"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/nickname_display"
+        style="@style/name_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:fontFamily="@font/roboto_mono"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/text_view_margin_small"
+        android:layout_marginVertical="@dimen/text_view_margin_small"
+        android:paddingHorizontal="@dimen/text_view_padding_small">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/goblet_of_fire_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_mono_italic"
+                android:justificationMode="inter_word"
+                android:lineSpacingMultiplier="@dimen/neat_line_space"
+                android:paddingLeft="@dimen/text_view_padding_small"
+                android:paddingRight="@dimen/text_view_padding_small"
+                android:paddingTop="@dimen/text_view_padding_small"
+                android:text="@string/goblet_of_fire_description_text"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
