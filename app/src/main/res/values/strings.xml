@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">About Me</string>
     <string name="name_text">Welcome to About Me!</string>
+    <string name="avatar_image_description">Avatar Image</string>
 </resources>

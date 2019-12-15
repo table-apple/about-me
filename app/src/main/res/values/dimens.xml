@@ -2,4 +2,6 @@
 <resources>
     <dimen name="text_view_margin_small" />
     <dimen name="text_view_padding_small">8dp</dimen>
+    <dimen name="image_view_padding_small">8dp</dimen>
+    <dimen name="image_view_margin_small">16dp</dimen>
 </resources>

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_vertical"
@@ -11,9 +13,20 @@
 
     <TextView
         android:id="@+id/name_text"
-        android:layout_width="wrap_content"
+        style="@style/name_style"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/name_text"
-        android:textAlignment="center"
-        style="@style/name_style" />
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/avatar_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/image_view_margin_small"
+        android:layout_marginVertical="@dimen/image_view_margin_small"
+        android:contentDescription="@string/avatar_image_description"
+        android:paddingHorizontal="@dimen/image_view_padding_small"
+        android:paddingVertical="@dimen/image_view_padding_small"
+        tools:srcCompat="@tools:sample/avatars[7]" />
 </LinearLayout>
